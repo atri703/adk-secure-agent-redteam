@@ -1,0 +1,32 @@
+{
+  "name": "Secure Knowledge Agent",
+  "description": "Read-only synthetic enterprise knowledge assistant with RBAC and optional Model Armor",
+  "version": "0.2.0",
+  "url": "https://REPLACE_WITH_AUTHENTICATED_A2A_ENDPOINT/",
+  "protocolVersion": "0.3.0",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "authorized_document_lookup",
+      "name": "Authorized document lookup",
+      "description": "Retrieve permitted synthetic knowledge documents",
+      "tags": [
+        "knowledge",
+        "security",
+        "read-only"
+      ],
+      "examples": [
+        "Read document handbook"
+      ]
+    }
+  ]
+}
